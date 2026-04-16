@@ -1,0 +1,28 @@
+{{> header}}
+
+{{#if error}}
+  <h2 style="color:red;">{{error}}</h2>
+{{else}}
+  <div class="card">
+    <h2>{{cityName}}</h2>
+        {{#if time}}
+          <p style="color: gray;">📅 {{date}} | {{time}}</p>
+        {{else}}
+          <p style="color: gray;">📅 {{date}}</p>
+        {{/if}}
+
+    <p>{{description}}</p>
+    <p>🌡 Температура: <b>{{temp}} °C</b></p>
+    <p>💧 Вологість: <b>{{humidity}}%</b></p>
+    <p>Тиск: <b>{{pressure}} hPa</b></p>
+  </div>
+{{/if}}
+
+<br>
+
+<a href="/">⬅ Back to Home</a>
+<a href="/my-city" style="background: green;">📍 Інше місто</a>
+<a href="/history">📊 Історія</a>
+
+{{> footer}}
+

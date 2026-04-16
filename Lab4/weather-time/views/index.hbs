@@ -1,0 +1,19 @@
+{{> header}}
+
+<h1>🌤 Weather App</h1>
+
+<p>Оберіть місто:</p>
+
+{{#each cities}}
+  <a href="/weather/{{this.query}}">{{this.name}}</a><br><br>
+{{/each}}
+
+<br>
+<a href="/my-city" style="background: green;">📍 Моє місто</a>
+
+<br>
+<a href="/history">📊 Історія</a>
+
+<a href="/future" style="background: orange;">Майбутня погода (до 5 днів)</a>
+
+{{> footer}}

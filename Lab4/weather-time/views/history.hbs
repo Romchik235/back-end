@@ -1,0 +1,19 @@
+{{> header}}
+
+<h2>📊 Історія запитів</h2>
+
+{{#each logs}}
+  <div class="card">
+    <p><b>{{city}}</b></p>
+    <p>{{temperature}} °C</p>
+    <p>{{description}}</p>
+    <p>{{created_at}}</p>
+
+    <a href="/delete/{{id}}" class="danger">❌ Видалити запит (місто)</a>
+  </div>
+{{/each}}
+
+<br>
+<a href="/">⬅ Назад</a>
+
+{{> footer}}

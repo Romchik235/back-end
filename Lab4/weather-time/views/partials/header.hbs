@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f8;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    input, select {
+      padding: 8px;
+      margin: 5px;
+      width: 80%;
+    }
+
+    button, a {
+      padding: 8px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #1565c0;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button:hover, a:hover {
+      background: #0d47a1;
+    }
+
+    .danger {
+      background: #c62828;
+    }
+
+    .danger:hover {
+      background: #8e0000;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    a {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+    }
+
+    a[href^="/weather"] {
+      background: #1565c0;
+    }
+
+    a[href="/my-city"] {
+      background: green;
+    }
+
+    button {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
